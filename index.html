@@ -3,12 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>First Event</title>
+    <title>Award Generator</title>
     <script src = "https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        div.a {
+            text-align: center;
+            background-color:white;
+            border: 10px double;
+        }
+    </style>
     <script>
+        
         $(function() {
-            $('h1').click(function() {
-                alert("You clicked a heading");
+            $('button').click(function() {
+                //get inputs from user 
+                var title = $('#title').val();
+                console.log(title);
+                var recipient = $('#recipient').val();
+                var reason= $('#reason').val();
+                var presenter = $('#presenter').val();
+                var date = $('#date').val();
+                
+                $('h1').html(title);
+                $('h1').html(title);
             });
         });
     </script>
@@ -16,7 +33,29 @@
 </head>
 
 <body>
-    <h1>heading</h1>
+    
+    Title of Award (ex: Certificate of Achievement) :<input id="title"><br>
+    Name of Recipient : <input id="recipient"><br>
+    Reason : <input id="reason"><br>
+    Name of Presenter :<input id="presenter"><br>
+    Date:<input id="date"><br>
+    <!--Border (select) :<input id="border"><br>-->
+    <!--Background color :<input id="background-color"><br>-->
+    <button>Generate my Award!</button>
+    <p>Below is an example of a certificate:</p>
+    <div class ="a">
+        <h1>Certificate of Achievement</h1>
+        <p>Awarded to</p>
+        <h2>Name of Recipient</h2>
+        <p>Awarded by</p>
+        <h3>Name of Presenter</h3>
+        <p>Congradulations on being such a good student!</p>
+        <p>Date </p>
+        
+    </div>
+    
+
+        
 </body>
 
 </html>
