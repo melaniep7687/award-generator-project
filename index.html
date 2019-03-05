@@ -20,12 +20,16 @@
                 var title = $('#title').val();
                 console.log(title);
                 var recipient = $('#recipient').val();
-                var reason= $('#reason').val();
                 var presenter = $('#presenter').val();
+                var reason= $('#reason').val();
                 var date = $('#date').val();
+                var border = $('#border').val();
                 
                 $('h1').html(title);
-                $('h1').html(title);
+                $('h2').html(recipient);
+                $('h3').html(presenter);
+                $('.b').html(reason);
+                $('.c').html(date);
             });
         });
     </script>
@@ -49,8 +53,8 @@
         <h2>Name of Recipient</h2>
         <p>Awarded by</p>
         <h3>Name of Presenter</h3>
-        <p>Congradulations on being such a good student!</p>
-        <p>Date </p>
+        <div class="b"><p>Congradulations on being such a good student!</p></div><br>
+        <div class="c"><p>Date </p></div><br>
         
     </div>
     
