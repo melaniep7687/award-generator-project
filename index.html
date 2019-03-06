@@ -23,13 +23,14 @@
                 var presenter = $('#presenter').val();
                 var reason= $('#reason').val();
                 var date = $('#date').val();
-                var border = $('#border').val();
+                var backgroundcolor = $('#background-color').val();
                 
                 $('h1').html(title);
                 $('h2').html(recipient);
                 $('h3').html(presenter);
                 $('.b').html(reason);
                 $('.c').html(date);
+                $('.a').css('background-color',backgroundcolor);
             });
         });
     </script>
@@ -44,7 +45,7 @@
     Name of Presenter :<input id="presenter"><br>
     Date:<input id="date"><br>
     <!--Border (select) :<input id="border"><br>-->
-    <!--Background color :<input id="background-color"><br>-->
+    Background color :<input id="background-color"><br>
     <button>Generate my Award!</button>
     <p>Below is an example of a certificate:</p>
     <div class ="a">
